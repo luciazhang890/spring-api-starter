@@ -1,4 +1,5 @@
 package com.codewithmosh.store.mappers;
+import com.codewithmosh.store.dtos.RegisterUserRequest;
 import com.codewithmosh.store.entities.User;
 import com.codewithmosh.store.dtos.UserDto;
 import org.mapstruct.Mapper;
@@ -8,4 +9,5 @@ import org.mapstruct.Mapping;
 public interface UserMapper {
 
     UserDto toDto(User user);
+    User toEntity(RegisterUserRequest request);
 }
